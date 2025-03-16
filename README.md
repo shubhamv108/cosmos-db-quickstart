@@ -83,7 +83,8 @@ contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additio
     <br/>
    ```keytool -importcert -alias cacerts -keystore cacerts -file ~/emulatorcert.crt```
 
-4. ```
+4. Add JVM Options
+    ```
     -Djavax.net.ssl.trustStore=/usr/lib/jvm/jdk-21-oracle-x64/lib/security/cacerts
     -Djavax.net.ssl.trustStoreType=JKS
     ```
