@@ -78,7 +78,9 @@ contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additio
    ```curl -k https://localhost:8081/_explorer/emulator.pem > ~/emulatorcert.crt```
 
 3. Add certificate to keystore
+   <br/>
    ```cd $JAVA_HOME/lib/security```
+    <br/>
    ```keytool -importcert -alias cacerts -keystore cacerts -file ~/emulatorcert.crt```
 
 4. ```
